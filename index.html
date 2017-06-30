@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MozNet</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<style>
+			body {
+				text-align: center;
+				font-family: monospace;
+				background: #252525;
+				color: #ffffff;
+				font-weight: lighter;
+			}
+			button {
+				background: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mozserver-protocol-center">
+			<h3>MozNet by Tomo</h3>
+			<h3>connect to the internet with one tap!</h3>
+			<button onclick="init()">connect</button>
+		</div>
+		<script>
+			function init() {
+				document.body.innerHTML = "";
+				var log = "MozNet by Tomo";
+				document.body.innerHTML += "<span style='font-size: 18px;'>" + log + "</span><br><br>";
+				var log = "initiating moznet...";
+				document.body.innerHTML += "<span>" + log + "</span><br>";
+				var log = "please turn off all internet connections.";
+				document.body.innerHTML += "<span>" + log + "</span><br>";
+				setTimeout( function () {
+					log = "complete!";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+					log = "connecting you to the internet...";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 2000)
+				setTimeout( function () {
+					log = "checking your device compatibility... (result:supported)";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+					log = "getting diagnostics information...";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 2800)
+				setTimeout( function () {
+					log = "complete!";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+					log = "opening settings... (please select the WiFi Connection Name : 'MozNet FREE VER')";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 3500)
+				setTimeout( function () {
+					log = "we found an error: bad piggy, beutiful fish!";
+					document.body.innerHTML += "<span style='color: #ff0066'>" + log + "</span><br>";
+				}, 3700)
+				setTimeout( function () {
+					log = "you are connected to a slow connection...";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+					log = "please wait until moznet gives you faster connection...";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 4700)
+				setTimeout( function () {
+					log = "moznet does not show the WiFi icon yet... <span style='color: #ff0066'>(initiating... <span style='color: #ff6600'>34%</span> complete)</span>";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 5700)
+				setTimeout( function () {
+					log = "but... <span style='color: #ff0066;'>(initiating... <span style='color: #ff6600'>57%</span> complete)</span>";
+					document.body.innerHTML += "<span>" + log + "</span><br>";
+				}, 6700)
+				setTimeout( function () {
+					log = "now you are connected! <span style='color: #ff0066;'>(initiating... <span style='color: #ff6600'>100%</span> complete)</span>";
+					document.body.innerHTML += "<span style='color: #ff5500'>" + log + "</span><br>";
+				}, 7700)
+				setTimeout( function () {
+					window.open("mailto:?subject=Check%20out%20MozNet by Tomo!&body=Visit%20https://prazma.github.io/moznet");
+				}, 9000)
+			}
+		</script>
+	</body>
+</html>
